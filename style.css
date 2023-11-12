@@ -1,0 +1,156 @@
+
+body {
+    background-color:#F1F1F1;
+    font-family:'Anonymous Pro','Russo One';
+    margin:0px;
+}
+header {
+    background-color: #fff;
+    padding:30px 0px;
+}
+.header-content {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+h3, p, h2{
+    margin: 0;
+}
+.logo {
+    width:212px;
+}
+
+.social {
+    display:flex;
+    gap:24px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap:24px;
+    padding: 0;
+  }
+.social a{
+    font-size:20px;
+    color:#121723;
+    text-decoration:none;
+}
+.new {
+    font-family: 'IBM Plex Mono';
+    font-size: 48px;
+    color:#121723;
+    margin-top:32px;
+}
+.container {
+    max-width: 1440px;
+    padding: 0 140px;
+    box-sizing: border-box;
+    margin: 0 auto;
+   }
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap:24px;
+    padding: 32px 0;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+.card-img {
+    width: 100%;
+}
+.link-social {
+    font-weight: 700;
+}
+.card-text {
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-content: start;
+    align-items: start;
+}
+.big-card-text {
+    color:#121723;
+    font-size:26px;
+    font-weight:700;
+    text-decoration: none;
+}
+.link {
+    text-decoration: none;
+}
+.small-text-card {
+    color:#121723;
+    font-size: 20px;
+    font-weight:400;
+    text-decoration: none;
+}
+.card {
+    border-radius: 12px;
+    width:calc(33.3333% - 16px);
+    background-color: #fff;
+    transition: 0.3s all;
+}
+footer {
+    background-color:#121723;
+    padding:32px 0 20px 0;
+}
+.footer-top {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+.footer-top .social a {
+    color:#fff;
+}
+.separator {
+    height:1px;
+    background-color: rgba(230, 232, 236, 40%);
+}
+.footer-logo {
+    width:300px;
+}
+.footer-bottom {
+    text-align: center;
+    font-size: 16px;
+    color:#A1A6B4;
+    font-weight: 700;
+    margin-top:18px;
+}
+@media screen and (max-width: 1000px) {
+    .card {
+    width:calc(50% - 12px);
+    }
+}
+@media screen and (max-width: 820px) {
+    .header-content {
+        flex-direction: column;
+    }
+    .new {
+        font-size:38px;
+    }
+    .container {
+        padding: 0 80px;
+    }
+}
+@media screen and (max-width: 760px) {
+    .footer-top {
+        flex-direction:column;
+        margin-bottom: 15px;
+    }
+    .container {
+        padding:0px 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+   .container {
+    padding:0 16px;
+   }
+}
+@media screen and (max-width: 500px) {
+    .card {
+        width:100%;
+    }
+}
