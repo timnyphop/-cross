@@ -15,6 +15,10 @@ header {
 h3, p, h2{
     margin: 0;
 }
+.block-text-right-content {
+    display: flex;
+    justify-content: space-between;
+}
 .logo {
     width:212px;
 }
@@ -91,6 +95,7 @@ nav ul {
     color:#121723;
     width:100%;
     max-width:506px;
+    margin-bottom: 32px;
 }
 .medium-text {
     width:100%;
@@ -98,6 +103,13 @@ nav ul {
     margin-bottom: 24px;
     max-width:327px;
     height:20px;
+}
+
+.for-right-parametrs {
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .medium {
     font-size:36px;
@@ -114,13 +126,11 @@ nav ul {
     max-width:506px;
     gap:24px;
     margin-left: 32px;
+    justify-content: space-between;
 }
 .medium-1 {
     font-size:30px;
     font-weight: 400;
-}
-.very-small1 {
-    float:right;
 }
 footer {
     background-color:#121723;
@@ -195,7 +205,9 @@ footer {
     padding: 32px 0;
     margin-top:32px;
 }
-
+.very-small1 {
+    float: right;
+}
 .card-img {
     width: 100%;
 }
